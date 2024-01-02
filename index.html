@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Own CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- Shoelace library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace-autoloader.js"
+    ></script>
+
+    <!-- lax.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+    <!-- Own JS file -->
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>Family B2</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Logo bar -->
+    <header>
+      <div class="logo__container">
+        <img
+          class="logo__img"
+          alt="VanMoof Logo SVG"
+          src="assets/svgs/40192-VanMoof-logo-black-d62636.svg"
+        />
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section class="header__section">
+        <div class="header__container">
+          <p class="header__subtitle">Family</p>
+          <h1>B2</h1>
+        </div>
+
+        <!-- Carousel and Product Teaser -->
+        <sl-carousel pagination class="header__carousel">
+          <sl-carousel-item>
+            <img 
+            alt="Gruppenbild" 
+            src="assets/imgs/IMG_1780.jpg" 
+            />
+          </sl-carousel-item>
+
+          <sl-carousel-item>
+            <img
+              alt="Aussicht"
+              src="assets/imgs/IMG_20230610_123516.jpg"
+            />
+          </sl-carousel-item>
+
+          <sl-carousel-item>
+            <img
+              alt="Trampelpfad"
+              src="assets/imgs/IMG_20230610_130031.jpg"
+            />
+          </sl-carousel-item>
+
+          <sl-carousel-item>
+            <iframe width="420" height="315"
+              src="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            </iframe>
+          </sl-carousel-item>
+
+        </sl-carousel>
+
+        <div class="header__teaser padding20">
+          <p class="header__teaser-text">
+            Erobere mit dem VanMoof T8 die Welt der Dekoration. 
+            Perfekt für einzigartige Akzente und inspirierende Atmosphären. 
+            Hol dir den T8 und verleihe deinem Raum einen Hauch von natürlicher Schönheit.
+          </p>
+        </div>
+      </section>
+
+
+      <!-- Slogan Section -->
+      <section class="slogan__section" id="slogan__section">
+        <div class="slogan__container" id="slogan__container">
+          <div class="slogan__text-container">
+            <h3 class="slogan__text">Bescheidene Perfektion.</h3>
+          </div>
+          <div class="slogan__frame"></div>
+        </div>
+      </section>
+
+
+      <!-- Specialty -->
+      <section class="specialty__section">
+        <div class="specialty__container">
+          <div class="specialty__layout">
+            <div
+              class="specialty__text-container"
+              id="specialty__text-container"
+            >
+              <h2 class="specialty__heading">Ökologische Ästhetik</h2>
+              <p class="specialty__title">
+                Vergiss andere Dekoartikel. Nein, wirklich.
+              </p>
+
+              <div class="specialty__highlight">
+                <span class="specialty__text">
+                  Holz aus niederländischen Produktionsabfällen - wertvolle Ressourcen wiederverwendet, Abfall reduziert.
+                </span>
+              </div>
+
+              <div class="specialty__highlight">
+                <span class="specialty__text">
+                  Das Ergebnis? Jeder T8 ist ein wahres Unikat, 
+                  da sich die Holzreste in ihrer Musterung und Beschaffenheit unterscheiden. 
+                </span>
+              </div>
+            </div>
+
+            <div
+              class="specialty__media-container media-container__img"
+              id="media-container__img"
+            >
+              <img
+                alt="T8 - top view"
+                src="assets/imgs/t8_above.jpg"
+                class="specialty__media-img"
+              />
+            </div>
+
+            <div
+              class="specialty__media-container media-container__vid"
+              id="media-container__vid"
+            >
+              <img
+                alt="T8 - turned towards left"
+                src="assets/anims/gif-1.gif"
+                class="specialty__media-vid"
+              />
+              <p class="specialty__media-text">
+                Der T8 - ein Meisterwerk der ästhetischen Nachhaltigkeit und der individuellen Handwerkskunst.
+              </p>
+            </div>
+          </div>
+
+          <!-- min-width 768px parallax -->
+          <div class="break__container">
+            <div class="break__frame">
+              <p class="break__text">Noch nachhaltiger geht wirklich nicht.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Summary -->
+      <section class="summary__section">
+        <div class="summary__heading-container">
+          <h4 class="summary__heading">Eine Family für alle</h4>
+          <p class="summary__subheading">
+            Eine Family für alle. Hier sind alle willkommen.
+          </p>
+        </div>
+
+        <div class="list__container">
+          <ul class="list">
+            <li class="list__row--first">
+              <p class="list__rowTitle">Zusammenfassung</p>
+              <p class="list__heading">Family B2</p>
+              <p class="list__text">
+                Unsere kunstvoll gefertigten Personen mit einzigartigem Charakter.</p>
+            </li>
+            <li class="list__row">
+              <p class="list__rowTitle">Haptik</p>
+              <p class="list__text">Die B2 begeistert mit einer natürlichen und geschmeidigen Haptik dank der unbehandelten, polierten Haut.</p>
+            </li>
+            <li class="list__row">
+              <p class="list__rowTitle">Höhe</p>
+              <p class="list__text">eher klein</p>
+            </li>
+            <li class="list__row">
+              <p class="list__rowTitle">Material</p>
+              <p class="list__text">100% organisches Material</p>
+            </li>
+            <li class="list__row">
+              <p class="list__rowTitle">In 3D ansehen</p>
+              <div class="dddContainer">
+                <p class="list__text">Schau dich um</p>
+                <svg class="list__svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"></path>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+
+      <div class="footer__container">
+        <div class="footer__wrapper">
+          <div class="footer__layout">
+            <div class="footer__newsletter">
+              <p class="footer__newsletter-title">Bleib auf dem Laufenden</p>
+              <p class="footer__newsletter-text">
+                Abonniere unseren Newsletter für Updates per Email
+              </p>
+
+            
+
+            <div class="footer__arrow-wrapper">
+              <a href="#" class="footer__arrow-link" aria-label="scroll to top">
+                <svg
+                  class="footer__arrow"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+
+          <div class="footer__bottom">
+            <div class="footer__country">
+              <img
+                src="assets/icons/de.png"
+                alt="Deutschland"
+                width="24px"
+                height="24px"
+              />
+              <span>Deutschland (Deutsch)</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
