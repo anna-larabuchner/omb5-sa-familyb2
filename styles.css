@@ -114,9 +114,11 @@ header {
   align-items: flex-end;
 }
 
-.logo__img {
-  height: 34px;
-  width: 152px;
+.logo__text {
+  color: var(--darkgrey);
+  font-size: 30px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
 }
 
 /* main */
@@ -136,6 +138,8 @@ header {
 }
 
 .header__subtitle {
+  margin: 0;
+  padding: 0 10px;
   color: #6d747d;
   font-size: 20px;
 }
@@ -251,9 +255,10 @@ header {
 }
 
 .slogan__frame {
-  background-image: url("assets/imgs/woodstructure.jpg");
+  background-image: url("assets/imgs/IMG_20230610_130031.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -770,7 +775,6 @@ sl-checkbox label {
 /* Bottom */
 
 .footer__bottom {
-  margin: 24px 0 0;
   padding: 0;
   color: #b1b9c5;
   font-size: 14px;
@@ -936,8 +940,20 @@ sl-checkbox label {
 
   /* USP */
 
-  .footer__usp {
-    padding: 0 70px 24px 70px;
+  .footer__layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .footer__newsletter-text {
+    margin: 0; 
+  }
+
+  .footer__bottom {
+    margin-right: 70px;
+    align-self: end;
+    padding: 0 0 16px; 
   }
 }
 
@@ -959,6 +975,10 @@ sl-checkbox label {
 
   .header__container {
     order: 1;
+  }
+
+  .header__subtitle {
+    margin: 0 10px;
   }
 
   .header__teaser {
@@ -999,7 +1019,7 @@ sl-checkbox label {
   /* Summary */
 
   .summary__section {
-    padding: 100px 70px;
+    padding: 0px 70px 100px;
   }
 
   /* Footer */
@@ -1012,6 +1032,10 @@ sl-checkbox label {
     display: flex;
     justify-content: space-between;
     align-items: start;
+  }
+
+  .footer__bottom {
+    margin: 0; 
   }
 
   /* Newsletter */
@@ -1043,11 +1067,7 @@ sl-checkbox label {
 
   /* Arrow */
 
-  .footer__arrow-wrapper {
-    top: auto;
-    right: auto;
-    position: relative;
-  }
+
 
   .footer__policies {
     display: flex;
