@@ -74,18 +74,17 @@
           </sl-carousel-item>
 
           <sl-carousel-item>
-            <div id="ytplayer"></div>
+            <video controls>
+              <source src="assets/videos/family_b2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video> 
           </sl-carousel-item>
 
           <sl-carousel-item>
-            <iframe type="text/html" width="560" height="315" 
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=75km32Z96ctEMcmA" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen
-              referrerpolicy="origin-when-cross-origin">
-            </iframe>
+            <video width="auto" height="auto" controls>
+              <source src="assets/videos/family_b2_extra.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video> 
           </sl-carousel-item>
 
         </sl-carousel>
@@ -164,6 +163,49 @@
               <p class="footer__newsletter-text">
                 Abonniere unseren Newsletter für unnötige Infos per Email
               </p>
+
+              <div class="footer__newsletter-form">
+                <label for="mail_input"></label>
+                <input
+                  type="email"
+                  name="email"
+                  id="mail_input"
+                  placeholder="name@email.com"
+                  class="footer__newsletter-input"
+                />
+
+                <button
+                  type="submit"
+                  class="footer__newsletter-submit"
+                  aria-label="E-Mail abschicken"
+                >
+                  <svg
+                    class="footer__newsletter-arrow"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="footer__newsletter-checkbox">
+                <sl-checkbox
+                  class="footer__newsletter-checkbox-field"
+                  value="email"
+                  required
+                >
+                  Ich akzeptiere die Datenschutzbestimmungen
+                </sl-checkbox>
+              </div>
 
             <div class="footer__arrow-wrapper">
               <a href="#" class="footer__arrow-link" aria-label="scroll to top">
